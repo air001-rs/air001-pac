@@ -3,6 +3,10 @@ name = "air001-pac"
 version = "0.0.1"
 description = "Peripheral Access Crate for Air001 microcontroller"
 edition = "2021"
+license = "MIT"
+repository = "https://github.com/air001-rs/air001-pac"
+categories = ["embedded", "no-std", "hardware-support"]
+keywords = ["air001", "embedded"]
 
 [dependencies]
 cortex-m = "0.7"
@@ -11,4 +15,9 @@ cortex-m-rt = { version = "0.7", optional = true}
 
 [features]
 rt = ["cortex-m-rt/device"]
+
+[package.metadata.docs.rs]
+default-target = "thumbv6m-none-eabi"
+features = ["rt"]
+targets = []
 
