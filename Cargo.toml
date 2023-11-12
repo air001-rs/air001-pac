@@ -1,0 +1,14 @@
+[package]
+name = "air001-pac"
+version = "0.0.1"
+description = "Peripheral Access Crate for Air001 microcontroller"
+edition = "2021"
+
+[dependencies]
+cortex-m = "0.7"
+vcell = "0.1"
+cortex-m-rt = { version = "0.7", optional = true}
+
+[features]
+rt = ["cortex-m-rt/device"]
+
