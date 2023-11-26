@@ -1,6 +1,6 @@
 [package]
 name = "air001-pac"
-version = "0.0.1"
+version = "0.0.2"
 description = "Peripheral Access Crate for Air001 microcontroller"
 edition = "2021"
 license = "MIT"
